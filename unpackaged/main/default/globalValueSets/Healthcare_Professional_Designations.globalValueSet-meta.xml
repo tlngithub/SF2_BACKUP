@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Dentist</fullName>
+        <default>false</default>
+        <label>Dentist</label>
+    </customValue>
+    <customValue>
+        <fullName>Doctor</fullName>
+        <default>false</default>
+        <label>Doctor</label>
+    </customValue>
+    <customValue>
+        <fullName>Doula</fullName>
+        <default>false</default>
+        <label>Doula</label>
+    </customValue>
+    <customValue>
+        <fullName>IBCLC</fullName>
+        <default>false</default>
+        <label>IBCLC</label>
+    </customValue>
+    <customValue>
+        <fullName>Midwife</fullName>
+        <default>false</default>
+        <label>Midwife</label>
+    </customValue>
+    <customValue>
+        <fullName>Not applicable</fullName>
+        <default>false</default>
+        <label>Not applicable</label>
+    </customValue>
+    <customValue>
+        <fullName>Nurse</fullName>
+        <default>false</default>
+        <label>Nurse</label>
+    </customValue>
+    <customValue>
+        <fullName>Nurse Practitioner</fullName>
+        <default>false</default>
+        <label>Nurse Practitioner</label>
+    </customValue>
+    <customValue>
+        <fullName>Occupational Therapist</fullName>
+        <default>false</default>
+        <label>Occupational Therapist</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Physical Therapist</fullName>
+        <default>false</default>
+        <label>Physical Therapist</label>
+    </customValue>
+    <customValue>
+        <fullName>Registered Dietician</fullName>
+        <default>false</default>
+        <label>Registered Dietician</label>
+    </customValue>
+    <customValue>
+        <fullName>Speech Pathologist</fullName>
+        <default>false</default>
+        <label>Speech Pathologist</label>
+    </customValue>
+    <masterLabel>Healthcare Professional Designations</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

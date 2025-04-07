@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlineEditora0OO8000002dk1pMAA</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Generate Test Template</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.Prefix == &#39;/s&#39;, $Site.Prefix + &#39;/apex/dfsle__onlineeditordocumentgenerator&#39;, &#39;/apex/dfsle__onlineeditordocumentgenerator&#39;), null, [sId = Lead.Id, templateId = &#39;a0OO8000002dk1pMAA&#39;, recordId = Lead.Id, title = &#39;Generate Test Template&#39;])}</url>
+</WebLink>

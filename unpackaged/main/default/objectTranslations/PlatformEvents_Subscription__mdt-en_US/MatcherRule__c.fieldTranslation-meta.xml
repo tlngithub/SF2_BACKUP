@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This determines which fields must match the event in order for it to be distributed to the consumer. --></help>
+        <label><!-- Matcher Rule --></label>
+        <name>MatcherRule__c</name>
+        <picklistValues>
+            <masterLabel>Match Event Bus</masterLabel>
+            <translation><!-- Match Event Bus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Event Bus and Category</masterLabel>
+            <translation><!-- Match Event Bus and Category --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Event Bus and Category and Event Name</masterLabel>
+            <translation><!-- Match Event Bus and Category and Event Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Event Bus and Event Name</masterLabel>
+            <translation><!-- Match Event Bus and Event Name --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

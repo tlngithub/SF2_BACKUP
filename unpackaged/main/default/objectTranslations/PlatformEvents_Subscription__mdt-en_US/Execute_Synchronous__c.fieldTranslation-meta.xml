@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, the Platform Event dynamic subscription will be executed within the same process as the trigger. When unchecked, the subscribed object will be executed as a Queueable. --></help>
+        <label><!-- Execute Synchronous --></label>
+        <name>Execute_Synchronous__c</name>
+    </CustomFieldTranslation>

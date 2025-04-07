@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>IBCLC Practice Owner</fullName>
+        <default>true</default>
+        <label>IBCLC Practice Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-IBCLC Practice Owner</fullName>
+        <default>false</default>
+        <label>Non-IBCLC Practice Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-IBCLC Financial Admin</fullName>
+        <default>false</default>
+        <label>Non-IBCLC Financial Admin</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IBCLC Financial Admin</fullName>
+        <default>false</default>
+        <label>IBCLC Financial Admin</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IBCLC Subcontractor</fullName>
+        <default>false</default>
+        <label>IBCLC Subcontractor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Basic Admin</fullName>
+        <default>false</default>
+        <label>Basic Admin</label>
+    </standardValue>
+</StandardValueSet>

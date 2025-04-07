@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Privacy_T_C__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field that tracks patient&#39;s consent to the privacy terms and conditions during the request a consultation form submission.</description>
+    <inlineHelpText>Patient has agreed to the privacy terms and conditions during the request a consultation form submission.</inlineHelpText>
+    <label>Privacy T&amp;C</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The partition name to store the binding records to.  If this value is not specified, the bindings will be stored to the main Org Platform Cache. --></help>
+        <label><!-- Org Cache Partition Name --></label>
+        <name>OrgCachePartitionName__c</name>
+    </CustomFieldTranslation>

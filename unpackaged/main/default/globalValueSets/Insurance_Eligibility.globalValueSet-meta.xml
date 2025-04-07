@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Eligible</fullName>
+        <default>false</default>
+        <label>Eligible</label>
+    </customValue>
+    <customValue>
+        <fullName>Ineligible</fullName>
+        <default>false</default>
+        <label>Ineligible</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Provided</fullName>
+        <default>false</default>
+        <label>Not Provided</label>
+    </customValue>
+    <masterLabel>Insurance Eligibility</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

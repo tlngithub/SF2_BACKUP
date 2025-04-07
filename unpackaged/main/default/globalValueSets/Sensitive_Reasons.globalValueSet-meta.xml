@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Mad</fullName>
+        <default>false</default>
+        <label>Mad</label>
+    </customValue>
+    <customValue>
+        <fullName>Sad</fullName>
+        <default>false</default>
+        <label>Sad</label>
+    </customValue>
+    <customValue>
+        <fullName>Bereaved</fullName>
+        <default>false</default>
+        <label>Bereaved</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Sensitive Reasons</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

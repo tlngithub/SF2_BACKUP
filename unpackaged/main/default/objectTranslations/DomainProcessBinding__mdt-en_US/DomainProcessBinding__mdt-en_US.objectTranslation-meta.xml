@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Domain Process Binding</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Domain Process Bindings</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Domain Process Binding Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The &quot;Domain Method Token&quot; should only be populated when the process context is &quot;Domain Method Execution&quot; --></errorMessage>
+        <name>DomainMethodTokenValidOnlyOnProcessDME</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Execute Asynchronous&quot; can only be true when Type is &quot;Action&quot; --></errorMessage>
+        <name>ExecuteAsynchronousValidOnlyOnTypeAction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Logical Inverse&quot; can only be true when Type is &quot;Criteria&quot; --></errorMessage>
+        <name>LogicalInverseValidOnlyOnTypeCriteria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either the &quot;Related Domain Binding SObject&quot; field or the &quot;Related Domain Binding SObject Alternate&quot; field must be specified. --></errorMessage>
+        <name>Minimal_BindObj_Or_BindObjAlt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only specify the &quot;Related Domain Binding SObject&quot; field or the &quot;Related Domain Binding SObject Alternate&quot; field; not both. --></errorMessage>
+        <name>Not_Both_BindObj_And_BindObjAlt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Prevent Recursive&quot; is only valid when the process context is &quot;Trigger Execution&quot; --></errorMessage>
+        <name>PreventRecursiveValidOnlyOnProcessTE</name>
+    </validationRules>
+</CustomObjectTranslation>

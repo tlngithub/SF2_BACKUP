@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Assign to System Administrator</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>System Administrator</label>
+    <mutingPermissionSets>Mute_API_Only_User_System_Setting</mutingPermissionSets>
+    <permissionSets>Account_Create_Clinical_Practices</permissionSets>
+    <permissionSets>Account_Create_Organizations</permissionSets>
+    <permissionSets>Account_View_Edit</permissionSets>
+    <permissionSets>Baby_View_and_Edit</permissionSets>
+    <permissionSets>Campaign_Create_Grants</permissionSets>
+    <permissionSets>Case_Create_Eligibility_Cases</permissionSets>
+    <permissionSets>Case_View_Edit</permissionSets>
+    <permissionSets>Contact_Create_Commercial_Contacts</permissionSets>
+    <permissionSets>Contact_Create_Grant_Applicants_Recipients</permissionSets>
+    <permissionSets>Contact_Create_LCs</permissionSets>
+    <permissionSets>Contact_View_Edit</permissionSets>
+    <permissionSets>Lead_View_Edit</permissionSets>
+    <permissionSets>Manage_Connections</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

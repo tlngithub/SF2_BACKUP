@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Baby_Insurance_Name__c</fullName>
+    <description>To inform an Eligibility/Intake Specialist of who the baby&#39;s insurance is and can take appropriate actions.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To inform an Eligibility/Intake Specialist of who the baby&#39;s insurance is and can take appropriate actions.</inlineHelpText>
+    <label>Baby Insurance Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

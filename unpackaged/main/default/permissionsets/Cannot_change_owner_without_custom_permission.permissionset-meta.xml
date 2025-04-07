@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>US-31010 cannot change owner of lead account and opportunity unless you have custom permission</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Cannot_change_owner_without_custom_permission</label>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Permission_to_change_owner</name>
+    </customPermissions>
+</PermissionSet>

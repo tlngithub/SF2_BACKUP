@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lactation_Consultant_Name__c</fullName>
+    <description>Captures which LC&#39;s vanity URL patient used; is blank otherwise</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures which LC&#39;s vanity URL patient used; is blank otherwise</inlineHelpText>
+    <label>Lactation Consultant (Vanity URL)</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

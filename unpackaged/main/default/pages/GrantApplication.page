@@ -1,0 +1,236 @@
+<apex:page docType="html-5.0"
+    applyHtmlTag="false"
+    applyBodyTag="false"
+    showHeader="false"
+    sidebar="false"
+    standardStylesheets="false"
+    title="Grant Application">
+    <html lang="en-US" dir="ltr" style="scroll-behavior: smooth">
+        <head>
+            <apex:includeLightning />
+            <apex:stylesheet value="{!URLFOR($Resource.grant_assets)}/css/main.css" />
+            <apex:stylesheet value="{!URLFOR($Resource.grant_assets)}/css/slds-override.css" />
+            <apex:includeScript value="{!URLFOR($Resource.grant_assets)}/js/vendor/jquery-3.7.1.min.js" />
+            <apex:includeScript value="{!URLFOR($Resource.grant_assets)}/js/main.js" />
+            <apex:slds id="slds"  />
+            <title>Grant Application</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+            <link rel="preload" as="font" href="//lactationnetwork.com/wp-content/themes/tln/build/fonts/Matter-Medium.ttf" crossorigin="" />
+            <link rel="preload" as="font" href="//lactationnetwork.com/wp-content/themes/tln/build/fonts/icomoon.ttf" crossorigin="" />
+            <link rel="preload" as="font" href="//lactationnetwork.com/wp-content/themes/tln/build/fonts/Matter-Regular.ttf" crossorigin="" />
+            <link rel="preload" as="font" href="//lactationnetwork.com/wp-content/themes/tln/build/fonts/freigtexpromedit.otf" crossorigin="" />
+            <link rel="preload" as="font" href="//lactationnetwork.com/wp-content/themes/tln/build/fonts/Matter-Light.ttf" crossorigin="" />
+
+        </head>
+        <body class="home">
+            <div id="wrapper" class="slds-scope">
+                <header class="header is-fixed shadow-xl">
+                    <div class="content-container">
+                        <div class="header__inner">
+                            <div class="header__left">
+                                <a class="header__logo-inner" href="https://lactationnetwork.com" rel="home" role="button">
+                                    <img
+                                        width="188"
+                                        height="40"
+                                        src="{!URLFOR($Resource.grant_assets)}/images/logo-dark.svg"
+                                        class="custom-logo"
+                                        alt=""
+                                        itemprop="logo"
+                                        decoding="async" />
+                                </a>
+                            </div>
+                            <div class="header__mobile-menu">
+                                <button type="button" class="header__menu-btn js-menu-btn" aria-label="Open Menu">
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="header__right">
+                                <div class="header__right-item">
+                                    <a href="https://lactationnetwork.com" >Back to main site</a>
+                                </div>
+                                <div class="header__right-item">
+                                    <a href="https://lactationnetwork.com/promo/tln-fund" >Back to Fund page</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__mobile-nav">
+                            <div class="header__right-item">
+                                <a href="https://lactationnetwork.com" >Back to main site</a>
+                            </div>
+                            <div class="header__right-item">
+                                <a href="https://lactationnetwork.com/promo/tln-fund" >Back to Fund page</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main id="content" class="site-main" role="main">
+                    <!--                    <div class="content-container">-->
+                    <div id="flowContainer" class="shadow-xl"></div>
+                    <!--                    </div>-->
+                </main>
+
+                <footer class="footer">
+                    <div class="content-container">
+                        <div class="footer__inner">
+                            <div class="footer__row footer__row_upper">
+                                <div class="footer__logo-wrapper">
+                                    <a class="footer__logo" href="javascript:void('scroll to top');" rel="home" role="button">
+                                        <img
+                                            width="180"
+                                            height="173"
+                                            src="{!URLFOR($Resource.grant_assets)}/images/logo-mint.svg"
+                                            class="attachment-full size-full"
+                                            alt=""
+                                            decoding="async" />
+                                    </a>
+                                </div>
+
+                                <div class="footer__form footer-form">
+                                    <p class="footer-form__description"></p>
+                                </div>
+                            </div>
+                            <!--                            -->
+                            <div class="footer__row footer__row_nav">
+                                <nav class="footer__nav footer-nav">
+                                    <ul class="footer-nav__list">
+                                        <li class="footer-nav__item footer-nav__item_has-children">
+                                            <a class="footer-nav__link" href="#">Our Company</a>
+                                            <ul
+                                                aria-haspopup="true"
+                                                aria-label="submenu"
+                                                aria-expanded="true"
+                                                class="footer-nav__sub-menu footer-nav__sub-menu_level-1">
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/about-us/">About Us</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/contact-us/">Contact us</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/press/">Press</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/careers/">Careers</a>
+                                                </li>
+                                                <li class="footer-nav__item"><a class="footer-nav__link" href="/frequently-asked-questions">FAQ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="footer-nav__item footer-nav__item_has-children">
+                                            <a class="footer-nav__link" href="#">Services</a>
+                                            <ul
+                                                aria-haspopup="true"
+                                                aria-label="submenu"
+                                                aria-expanded="true"
+                                                class="footer-nav__sub-menu footer-nav__sub-menu_level-1">
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://registration.mytln.care/">Lactation Consultation</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/for-health-plans/">For Health Plans</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/hcp-old/">For healthcare providers</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/breastfeeding-resources/"
+                                                        >Breastfeeding Resources</a
+                                                    >
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/advocacy-hub/">Lactation Coverage Gap</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="footer-nav__item footer-nav__item_has-children">
+                                            <a class="footer-nav__link" href="#">Social</a>
+                                            <ul
+                                                aria-haspopup="true"
+                                                aria-label="submenu"
+                                                aria-expanded="true"
+                                                class="footer-nav__sub-menu footer-nav__sub-menu_level-1">
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://www.facebook.com/LactationNetwork/">Facebook</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://www.instagram.com/lactationnetwork/">Instagram</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://www.pinterest.com/thelactationnetwork/">Pinterest</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="footer-nav__item footer-nav__item_has-children footer-nav__item_hide-menu-item">
+                                            <a class="footer-nav__link" href="#">Other</a>
+                                            <ul
+                                                aria-haspopup="true"
+                                                aria-label="submenu"
+                                                aria-expanded="true"
+                                                class="footer-nav__sub-menu footer-nav__sub-menu_level-1">
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/privacy-policy/">Privacy Policy</a>
+                                                </li>
+                                                <li class="footer-nav__item">
+                                                    <a class="footer-nav__link" href="https://lactationnetwork.com/hipaa/">HIPAA</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--          -->
+                            <div class="footer__row footer__row_copyrights">
+                                <div class="footer__copyrights">
+                                    <p>© 2024 TLN, Inc. — All rights reserved.</p>
+                                    <p style="font-size: 9px">THE LACTATION NETWORK, TLN, and TLN stylized are trademarks of The Lactation Network, LLC.</p>
+                                    <p></p>
+                                </div>
+                                <div class="footer__logotypes">
+                                    <img
+                                        width="144"
+                                        height="48"
+                                        src="//lactationnetwork.b-cdn.net/wp-content/uploads/2021/06/Bitmap@2x.png"
+                                        class="attachment-thumbnail size-thumbnail"
+                                        alt="Logo - Font"
+                                        decoding="async"
+                                        loading="lazy"
+                                        srcset="//lactationnetwork.b-cdn.net/wp-content/uploads/2021/06/Bitmap@2x.png 144w, //lactationnetwork.b-cdn.net/wp-content/uploads/2021/06/Bitmap@2x-60x20.png 60w, //lactationnetwork.b-cdn.net/wp-content/uploads/2021/06/Bitmap@2x-110x37.png 110w"
+                                        sizes="(max-width: 144px) 100vw, 144px" />
+                                    <img
+                                        width="148"
+                                        height="48"
+                                        src="//lactationnetwork.b-cdn.net/wp-content/uploads/2021/06/logo_fsa-hsa-eligible@2x.png"
+                                        class="attachment-thumbnail size-thumbnail"
+                                        alt="Logo - Hoffnung für Dich e.V. Mutter-Kind-Haus"
+                                        decoding="async"
+                                        loading="lazy"
+                                        srcset="//lactationnetwork.b-cdn.net/wp-content/uploads/2021/06/logo_fsa-hsa-eligible@2x.png 148w, //lactationnetwork.b-cdn.net/wp-content/uploads/2021/06/logo_fsa-hsa-eligible@2x-60x19.png 60w, //lactationnetwork.b-cdn.net/wp-content/uploads/2021/06/logo_fsa-hsa-eligible@2x-110x36.png 110w"
+                                        sizes="(max-width: 148px) 100vw, 148px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <script>
+                var statusChange = function (event) {
+                    if (event.getParam('status') === 'FINISHED') {
+                        // var outputVariables = event.getParam("outputVariables");
+                        // var key;
+                        // for(key in outputVariables) {
+                        //     if(outputVariables[key].name === "myOutput") {
+                        //     }
+                        // }
+                        // Sample code for possible future output handling
+                    }
+                };
+                $Lightning.use('c:lightningOutApp', function () {
+                    $Lightning.createComponent('lightning:flow', { onstatuschange: statusChange }, 'flowContainer', function (component) {
+                        component.startFlow('Grant_Application_SCR');
+                    });
+                });
+            </script>
+        </body>
+    </html>
+</apex:page>

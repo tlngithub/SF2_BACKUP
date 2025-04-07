@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sensitive_Situation_Not_Active</fullName>
+    <active>true</active>
+    <description>US-28008</description>
+    <errorConditionFormula>AND(NOT(Sensitive_Situation__c), NOT(ISBLANK(Sensitive_Reason__c)))</errorConditionFormula>
+    <errorDisplayField>Sensitive_Reason__c</errorDisplayField>
+    <errorMessage>You specified sensitive reason, but sensitive situation is not active. Please, clear sensitive reasons or mark as sensitive situation.</errorMessage>
+</ValidationRule>

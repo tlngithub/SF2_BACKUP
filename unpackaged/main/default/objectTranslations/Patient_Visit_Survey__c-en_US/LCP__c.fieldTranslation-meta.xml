@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- LCP --></label>
+        <name>LCP__c</name>
+        <relationshipLabel><!-- Patient Visit Surveys(LCP) --></relationshipLabel>
+    </CustomFieldTranslation>

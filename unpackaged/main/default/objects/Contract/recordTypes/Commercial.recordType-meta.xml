@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commercial</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Commercial</compactLayoutAssignment>
+    <label>Commercial</label>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

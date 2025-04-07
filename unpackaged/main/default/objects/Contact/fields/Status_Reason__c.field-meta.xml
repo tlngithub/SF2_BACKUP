@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Reason__c</fullName>
+    <label>Status Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incomplete BG Check</fullName>
+                <default>false</default>
+                <label>BGC</label>
+            </value>
+            <value>
+                <fullName>Missing CAQH number</fullName>
+                <default>false</default>
+                <label>CAQH</label>
+            </value>
+            <value>
+                <fullName>Closed Practice</fullName>
+                <default>false</default>
+                <label>Closed Practice</label>
+            </value>
+            <value>
+                <fullName>Documentation Issues</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Expired Credentials</fullName>
+                <default>false</default>
+                <label>Expired Credential</label>
+            </value>
+            <value>
+                <fullName>Left Group Practice</fullName>
+                <default>false</default>
+                <label>Left group practice</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Deactivated</controllingFieldValue>
+            <valueName>Incomplete BG Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deactivated</controllingFieldValue>
+            <valueName>Missing CAQH number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deactivated</controllingFieldValue>
+            <valueName>Closed Practice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deactivated</controllingFieldValue>
+            <valueName>Documentation Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deactivated</controllingFieldValue>
+            <valueName>Expired Credentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deactivated</controllingFieldValue>
+            <valueName>Left Group Practice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deactivated</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Termination__c</fullName>
+    <label>Type of Termination</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Self terminated</fullName>
+                <default>false</default>
+                <label>Self terminated</label>
+            </value>
+            <value>
+                <fullName>Terminated by TLN</fullName>
+                <default>false</default>
+                <label>Terminated by TLN</label>
+            </value>
+            <value>
+                <fullName>Immediate agreed by both parties</fullName>
+                <default>false</default>
+                <label>Immediate agreed by both parties</label>
+            </value>
+            <value>
+                <fullName>Termed with cause - immediate</fullName>
+                <default>false</default>
+                <label>Termed with cause - immediate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

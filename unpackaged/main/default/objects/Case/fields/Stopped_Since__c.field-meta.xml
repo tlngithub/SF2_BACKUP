@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stopped_Since__c</fullName>
+    <description>Technical field, is used to capture the date from which we shall not count resolution time as case was in &#39;Waiting on External Response&#39; or &#39;Resolved&#39; state.</description>
+    <label>Stopped Since</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

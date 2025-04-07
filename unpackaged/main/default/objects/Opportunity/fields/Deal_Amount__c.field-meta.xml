@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Amount__c</fullName>
+    <description>Eligibile Lives x 2% population x 5% engagement x 3.4 visits at $390 per visit</description>
+    <formula>Eligible_Lives__c * 1.326</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Eligibile Lives x 2% population x 5% engagement x 3.4 visits at $390 per visit</inlineHelpText>
+    <label>Deal Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

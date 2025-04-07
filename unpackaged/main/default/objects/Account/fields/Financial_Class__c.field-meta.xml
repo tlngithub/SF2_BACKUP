@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Class__c</fullName>
+    <label>Financial Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blue Cross Blue Shield</fullName>
+                <default>false</default>
+                <label>Blue Cross Blue Shield</label>
+            </value>
+            <value>
+                <fullName>Medicaid</fullName>
+                <default>false</default>
+                <label>Medicaid</label>
+            </value>
+            <value>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+                <label>Medicare</label>
+            </value>
+            <value>
+                <fullName>Aetna</fullName>
+                <default>false</default>
+                <label>Aetna</label>
+            </value>
+            <value>
+                <fullName>Cigna</fullName>
+                <default>false</default>
+                <label>Cigna</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Do Not Bill</fullName>
+                <default>false</default>
+                <label>Do Not Bill</label>
+            </value>
+            <value>
+                <fullName>MultiPlan</fullName>
+                <default>false</default>
+                <label>MultiPlan</label>
+            </value>
+            <value>
+                <fullName>Newborn Families</fullName>
+                <default>false</default>
+                <label>Newborn Families</label>
+            </value>
+            <value>
+                <fullName>Self-Pay</fullName>
+                <default>false</default>
+                <label>Self-Pay</label>
+            </value>
+            <value>
+                <fullName>UnitedHealthcare</fullName>
+                <default>false</default>
+                <label>UnitedHealthcare</label>
+            </value>
+            <value>
+                <fullName>Veterans/Military</fullName>
+                <default>false</default>
+                <label>Veterans/Military</label>
+            </value>
+            <value>
+                <fullName>Contracted Commercial</fullName>
+                <default>false</default>
+                <label>Contracted Commercial</label>
+            </value>
+            <value>
+                <fullName>Dental</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>Motor Vehicle Accident</fullName>
+                <default>false</default>
+                <label>Motor Vehicle Accident</label>
+            </value>
+            <value>
+                <fullName>Non-Contracted Commercial</fullName>
+                <default>false</default>
+                <label>Non-Contracted Commercial</label>
+            </value>
+            <value>
+                <fullName>Vision</fullName>
+                <default>false</default>
+                <label>Vision</label>
+            </value>
+            <value>
+                <fullName>Workers Comp</fullName>
+                <default>false</default>
+                <label>Workers Comp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

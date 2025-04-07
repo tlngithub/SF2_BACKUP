@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubType__c</fullName>
+    <label>SubType</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Intake Viewer Issue</fullName>
+                <default>false</default>
+                <label>Intake Viewer Issue</label>
+            </value>
+            <value>
+                <fullName>Approved On Date Issue</fullName>
+                <default>false</default>
+                <label>Approved On Date Issue</label>
+            </value>
+            <value>
+                <fullName>Addendum Question</fullName>
+                <default>false</default>
+                <label>Addendum Question</label>
+            </value>
+            <value>
+                <fullName>Chat Issue</fullName>
+                <default>false</default>
+                <label>Chat Issue</label>
+            </value>
+            <value>
+                <fullName>Care Plan Question</fullName>
+                <default>false</default>
+                <label>Care Plan Question</label>
+            </value>
+            <value>
+                <fullName>Card Reader Issue</fullName>
+                <default>false</default>
+                <label>Card Reader Issue</label>
+            </value>
+            <value>
+                <fullName>Known Bug</fullName>
+                <default>false</default>
+                <label>Known Bug</label>
+            </value>
+            <value>
+                <fullName>Chat Page Questions</fullName>
+                <default>false</default>
+                <label>Chat Page Questions</label>
+            </value>
+            <value>
+                <fullName>Chat Question</fullName>
+                <default>false</default>
+                <label>Chat Question</label>
+            </value>
+            <value>
+                <fullName>Confirmation Email Issue</fullName>
+                <default>false</default>
+                <label>Confirmation Email Issue</label>
+            </value>
+            <value>
+                <fullName>Non-issue</fullName>
+                <default>false</default>
+                <label>Non-issue</label>
+            </value>
+            <value>
+                <fullName>Eligibility Status Issue</fullName>
+                <default>false</default>
+                <label>Eligibility Status Issue</label>
+            </value>
+            <value>
+                <fullName>myTLN Chart Question</fullName>
+                <default>false</default>
+                <label>myTLN Chart Question</label>
+            </value>
+            <value>
+                <fullName>Login Issue</fullName>
+                <default>false</default>
+                <label>Login Issue</label>
+            </value>
+            <value>
+                <fullName>LC Contact Info Question</fullName>
+                <default>false</default>
+                <label>LC Contact Info Question</label>
+            </value>
+            <value>
+                <fullName>Confirmation Screen Issue</fullName>
+                <default>false</default>
+                <label>Confirmation Screen Issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Error Message</fullName>
+                <default>false</default>
+                <label>Error Message</label>
+            </value>
+            <value>
+                <fullName>Permissions Issue</fullName>
+                <default>false</default>
+                <label>Permissions Issue</label>
+            </value>
+            <value>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+                <label>Password Reset</label>
+            </value>
+            <value>
+                <fullName>Form Loading Issue</fullName>
+                <default>false</default>
+                <label>Form Loading Issue</label>
+            </value>
+            <value>
+                <fullName>Portal error - Attempt of rematching/paring to not existed LC</fullName>
+                <default>false</default>
+                <label>Portal error - Attempt of rematching/paring to not existed LC</label>
+            </value>
+            <value>
+                <fullName>myTLN Chart Issue</fullName>
+                <default>false</default>
+                <label>myTLN Chart Issue</label>
+            </value>
+            <value>
+                <fullName>Patients Page Question</fullName>
+                <default>false</default>
+                <label>Patients Page Question</label>
+            </value>
+            <value>
+                <fullName>Telehealth Issue</fullName>
+                <default>false</default>
+                <label>Telehealth Issue</label>
+            </value>
+            <value>
+                <fullName>Profile Question</fullName>
+                <default>false</default>
+                <label>Profile Question</label>
+            </value>
+            <value>
+                <fullName>Portal error - LC Onboarding Details</fullName>
+                <default>false</default>
+                <label>Portal error - LC Onboarding Details</label>
+            </value>
+            <value>
+                <fullName>Resources Question</fullName>
+                <default>false</default>
+                <label>Resources Question</label>
+            </value>
+            <value>
+                <fullName>Portal error - Missing Patient Visit Details</fullName>
+                <default>false</default>
+                <label>Portal error - Missing Patient Visit Details</label>
+            </value>
+            <value>
+                <fullName>Reports Page Question</fullName>
+                <default>false</default>
+                <label>Reports Page Question</label>
+            </value>
+            <value>
+                <fullName>Resubmission Question</fullName>
+                <default>false</default>
+                <label>Resubmission Question</label>
+            </value>
+            <value>
+                <fullName>Old Link Was Used</fullName>
+                <default>false</default>
+                <label>Old Link Was Used</label>
+            </value>
+            <value>
+                <fullName>Portal error - Patient Account Details</fullName>
+                <default>false</default>
+                <label>Portal error - Patient Account Details</label>
+            </value>
+            <value>
+                <fullName>Patient Coverage Box Issue</fullName>
+                <default>false</default>
+                <label>Patient Coverage Box Issue</label>
+            </value>
+            <value>
+                <fullName>Resources Page Question</fullName>
+                <default>false</default>
+                <label>Resources Page Question</label>
+            </value>
+            <value>
+                <fullName>Telehealth Question</fullName>
+                <default>false</default>
+                <label>Telehealth Question</label>
+            </value>
+            <value>
+                <fullName>Portal error - patient re-sync results</fullName>
+                <default>false</default>
+                <label>Portal error - patient re-sync results</label>
+            </value>
+            <value>
+                <fullName>Patient Denied Tab Issue</fullName>
+                <default>false</default>
+                <label>Patient Denied Tab Issue</label>
+            </value>
+            <value>
+                <fullName>Update Insurance Question</fullName>
+                <default>false</default>
+                <label>Update Insurance Question</label>
+            </value>
+            <value>
+                <fullName>Upload Issue</fullName>
+                <default>false</default>
+                <label>Upload Issue</label>
+            </value>
+            <value>
+                <fullName>Portal error - unable to create or update a user</fullName>
+                <default>false</default>
+                <label>Portal error - unable to create or update a user</label>
+            </value>
+            <value>
+                <fullName>Patient Pending Tab Issue</fullName>
+                <default>false</default>
+                <label>Patient Pending Tab Issue</label>
+            </value>
+            <value>
+                <fullName>Visits Page Question</fullName>
+                <default>false</default>
+                <label>Visits Page Question</label>
+            </value>
+            <value>
+                <fullName>Write-In Field Issue</fullName>
+                <default>false</default>
+                <label>Write-In Field Issue</label>
+            </value>
+            <value>
+                <fullName>Salesforce Issue</fullName>
+                <default>false</default>
+                <label>Salesforce Issue</label>
+            </value>
+            <value>
+                <fullName>Patients Page Issue - Other</fullName>
+                <default>false</default>
+                <label>Patients Page Issue - Other</label>
+            </value>
+            <value>
+                <fullName>Profile Issue</fullName>
+                <default>false</default>
+                <label>Profile Issue</label>
+            </value>
+            <value>
+                <fullName>Resource Page Issue</fullName>
+                <default>false</default>
+                <label>Resource Page Issue</label>
+            </value>
+            <value>
+                <fullName>TLN Activity Report Issue</fullName>
+                <default>false</default>
+                <label>TLN Activity Report Issue</label>
+            </value>
+            <value>
+                <fullName>Visit Submission Issue</fullName>
+                <default>false</default>
+                <label>Visit Submission Issue</label>
+            </value>
+            <value>
+                <fullName>Visits Page Issue - Other</fullName>
+                <default>false</default>
+                <label>Visits Page Issue - Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Intake Viewer Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Issue</controllingFieldValue>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Known Bug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Issue</controllingFieldValue>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Non-issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Issue</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Permissions Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Portal error - Attempt of rematching/paring to not existed LC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Portal error - LC Onboarding Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Portal error - Missing Patient Visit Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Portal error - Patient Account Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Portal error - patient re-sync results</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Portal error - unable to create or update a user</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal System Issue</controllingFieldValue>
+            <valueName>Salesforce Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Approved On Date Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Issue</controllingFieldValue>
+            <valueName>Chat Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Eligibility Status Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <valueName>myTLN Chart Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Issue</controllingFieldValue>
+            <valueName>Login Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Issue</controllingFieldValue>
+            <valueName>Telehealth Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Patient Coverage Box Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Patient Denied Tab Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Patient Pending Tab Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Patients Page Issue - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Profile Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Resource Page Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>TLN Activity Report Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Visit Submission Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Issue</controllingFieldValue>
+            <valueName>Visits Page Issue - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <valueName>Addendum Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <valueName>Chat Page Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>Password Reset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <valueName>Patients Page Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>Profile Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <valueName>Reports Page Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <valueName>Resources Page Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>Telehealth Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LC Portal Questions</controllingFieldValue>
+            <valueName>Visits Page Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>Care Plan Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>Chat Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>LC Contact Info Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>Resources Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>Resubmission Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Portal Question</controllingFieldValue>
+            <valueName>Update Insurance Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Card Reader Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Confirmation Email Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Confirmation Screen Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Error Message</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Form Loading Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Old Link Was Used</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Upload Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Patient Submission Issue</controllingFieldValue>
+            <valueName>Write-In Field Issue</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

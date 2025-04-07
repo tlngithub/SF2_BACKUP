@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Profile__c</fullName>
+    <label>Business Profile</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I own or work in a full time practice</fullName>
+                <default>false</default>
+                <label>I own or work in a full time practice</label>
+            </value>
+            <value>
+                <fullName>I own or work in a part time practice</fullName>
+                <default>false</default>
+                <label>I own or work in a part time practice</label>
+            </value>
+            <value>
+                <fullName>I work in a hospital</fullName>
+                <default>false</default>
+                <label>I work in a hospital</label>
+            </value>
+            <value>
+                <fullName>I work in another medical provider&#39;s office</fullName>
+                <default>false</default>
+                <label>I work in another medical provider&#39;s office</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

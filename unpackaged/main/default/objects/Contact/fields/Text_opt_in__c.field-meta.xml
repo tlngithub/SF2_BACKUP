@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Text_opt_in__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates the patient has agreed to the text opt-in during the request a consultation form submission.</description>
+    <inlineHelpText>Indicates the patient has agreed to the text opt-in during the request a consultation form submission.</inlineHelpText>
+    <label>Text opt-in</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligibility</fullName>
+    <active>true</active>
+    <businessProcess>Eligibility</businessProcess>
+    <compactLayoutAssignment>Eligibility_Layout</compactLayoutAssignment>
+    <label>Eligibility</label>
+    <picklistValues>
+        <picklist>Business_Unit__c</picklist>
+        <values>
+            <fullName>TLN</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Employee Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ring Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLN Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waystar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>myTLN portal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Emergent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Urgent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning Ahead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubType__c</picklist>
+        <values>
+            <fullName>Addendum Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved On Date Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card Reader Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care Plan Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat Page Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmation Email Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmation Screen Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eligibility Status Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error Message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Loading Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intake Viewer Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Known Bug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC Contact Info Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Login Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Link Was Used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password Reset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Coverage Box Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Denied Tab Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Pending Tab Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patients Page Issue - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patients Page Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permissions Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal error - Attempt of rematching%2Fparing to not existed LC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal error - LC Onboarding Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal error - Missing Patient Visit Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal error - Patient Account Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal error - patient re-sync results</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal error - unable to create or update a user</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Profile Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Profile Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reports Page Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Page Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resources Page Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resources Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resubmission Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLN Activity Report Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telehealth Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telehealth Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Insurance Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upload Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit Submission Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visits Page Issue - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visits Page Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Write-In Field Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>myTLN Chart Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>myTLN Chart Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Submission_Status__c</picklist>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InProcess</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Successful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

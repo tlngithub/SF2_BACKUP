@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Within a process context and &quot;trigger operation&quot;/&quot;domain method token&quot;, you will have one or more criteria and one or more actions.  This allows you to specify what the execution order is. --></help>
+        <label><!-- Order Of Execution --></label>
+        <name>OrderOfExecution__c</name>
+    </CustomFieldTranslation>

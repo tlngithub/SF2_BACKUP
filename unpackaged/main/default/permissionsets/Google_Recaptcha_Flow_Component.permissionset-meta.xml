@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives access to the GoogleRecaptchaHandler and GoogleRecaptchaHandlerTest class.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Google Recaptcha Flow Component</label>
+    <classAccesses>
+        <apexClass>GoogleRecaptchaHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>GoogleRecaptchaHandlerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.Team__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.Team__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

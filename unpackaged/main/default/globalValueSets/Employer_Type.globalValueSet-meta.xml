@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>WIC</fullName>
+        <default>false</default>
+        <label>WIC</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital</fullName>
+        <default>false</default>
+        <label>Hospital</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Practice</fullName>
+        <default>false</default>
+        <label>Private Practice</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Agency</fullName>
+        <default>false</default>
+        <label>Government Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>None of These</fullName>
+        <default>false</default>
+        <label>None of These</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Employer Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

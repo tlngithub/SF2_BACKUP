@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Inactive__c</fullName>
+    <label>Reason For Inactive</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Out of network prefix</fullName>
+                <default>false</default>
+                <label>Out of network prefix</label>
+            </value>
+            <value>
+                <fullName>Plan Type not accepted (HMO/EPO/Medicaid/restricted multiplan/etc)</fullName>
+                <default>false</default>
+                <label>Plan Type not accepted (HMO/EPO/Medicaid/restricted multiplan/etc)</label>
+            </value>
+            <value>
+                <fullName>More than 6 months since last visit</fullName>
+                <default>false</default>
+                <label>More than 6 months since last visit</label>
+            </value>
+            <value>
+                <fullName>Insurance went inactive</fullName>
+                <default>false</default>
+                <label>Insurance went inactive</label>
+            </value>
+            <value>
+                <fullName>Referral End Date / Visit Cap Met</fullName>
+                <default>false</default>
+                <label>Referral End Date / Visit Cap Met</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

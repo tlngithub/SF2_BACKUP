@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Existing Business</fullName>
+        <default>false</default>
+        <label>Existing Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Business</fullName>
+        <default>false</default>
+        <label>New Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MAO</fullName>
+        <default>false</default>
+        <label>MAO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Newborn Families Program</fullName>
+        <default>false</default>
+        <label>Newborn Families Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Standard Program</fullName>
+        <default>false</default>
+        <label>Standard Program</label>
+    </standardValue>
+</StandardValueSet>

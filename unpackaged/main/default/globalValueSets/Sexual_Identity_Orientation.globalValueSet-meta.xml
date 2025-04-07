@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Lesbian, Gay or Homosexual</fullName>
+        <default>false</default>
+        <label>Lesbian, Gay or Homosexual</label>
+    </customValue>
+    <customValue>
+        <fullName>Straight or Heterosexual</fullName>
+        <default>false</default>
+        <label>Straight or Heterosexual</label>
+    </customValue>
+    <customValue>
+        <fullName>Bisexual</fullName>
+        <default>false</default>
+        <label>Bisexual</label>
+    </customValue>
+    <customValue>
+        <fullName>Pansexual</fullName>
+        <default>false</default>
+        <label>Pansexual</label>
+    </customValue>
+    <customValue>
+        <fullName>Queer</fullName>
+        <default>false</default>
+        <label>Queer</label>
+    </customValue>
+    <customValue>
+        <fullName>Asexual</fullName>
+        <default>false</default>
+        <label>Asexual</label>
+    </customValue>
+    <customValue>
+        <fullName>Two-spirit</fullName>
+        <default>false</default>
+        <label>Two-spirit</label>
+    </customValue>
+    <customValue>
+        <fullName>Questioning/not sure</fullName>
+        <default>false</default>
+        <label>Questioning/not sure</label>
+    </customValue>
+    <customValue>
+        <fullName>Choose not to disclose</fullName>
+        <default>false</default>
+        <label>Choose not to disclose</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Listed</fullName>
+        <default>false</default>
+        <label>Not Listed</label>
+    </customValue>
+    <masterLabel>Sexual Identity/Orientation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

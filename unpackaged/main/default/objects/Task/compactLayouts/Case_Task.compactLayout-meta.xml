@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Task</fullName>
+    <fields>Subject</fields>
+    <fields>Team__c</fields>
+    <fields>CallDisposition</fields>
+    <label>Case Task</label>
+</CompactLayout>

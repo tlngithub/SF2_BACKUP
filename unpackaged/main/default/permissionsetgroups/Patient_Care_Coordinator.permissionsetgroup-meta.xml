@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Patient Care Coordinator</label>
+    <permissionSets>Contact_View_Edit</permissionSets>
+    <permissionSets>Lead_View_Edit</permissionSets>
+    <permissionSets>Manage_Connections</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
