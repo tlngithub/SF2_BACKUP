@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Complete - PASS</fullName>
+        <default>false</default>
+        <label>Complete - PASS</label>
+    </customValue>
+    <customValue>
+        <fullName>Complete - FAIL</fullName>
+        <default>false</default>
+        <label>Complete - FAIL</label>
+    </customValue>
+    <customValue>
+        <fullName>Incomplete</fullName>
+        <default>false</default>
+        <label>Incomplete</label>
+    </customValue>
+    <description>Background check values for LCs</description>
+    <masterLabel>Monthly Background Check</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lactation_Consultant__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Lactation Consultant</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Lactation Practice</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

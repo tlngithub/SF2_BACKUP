@@ -1,0 +1,297 @@
+<template>
+    <template if:true={isVisible}>
+        <div>
+            <div class="slds-text-heading_small">
+                Patient Data:
+            </div>
+
+            <table class="slds-table slds-table_bordered slds-border_left slds-border_right">
+                <thead>
+                    <th scope="col" style="width: 25%">
+                        <div class="slds-truncate" title="Insurance Company">Insurance Company</div>
+                    </th>
+                    <th scope="col" style="width: 15%">
+                        <div class="slds-truncate" title="Group Number">Group Number</div>
+                    </th>
+                    <th scope="col" style="width: 15%">
+                        <div class="slds-truncate" title="Rel to Policy Holder">Rel to Policy Holder</div>
+                    </th>
+                    <th scope="col" style="width: 15%">
+                        <div class="slds-truncate" title="Ref Num">Ref Num</div>
+                    </th>
+                    <th scope="col" style="width: 20%">
+                        <div class="slds-truncate" title="Employer Code">Employer Code</div>
+                    </th>
+                    <th scope="col" style="width: 10%">
+                        <div class="slds-truncate" title="Visit Number">Visit Number</div>
+                    </th>
+                </thead>
+
+                <tbody>
+                    <template for:each={result.submissions} for:item="submission">
+                        <template if:true={submission.hasInsurance}>
+                            <template for:each={submission.insurances} for:item="insurance">
+                                <tr key={insurance.id}>
+                                    <td style="width: 25%">
+                                        <div class="slds-truncate" title={insurance.insurerName}>
+                                            <lightning-formatted-text value={insurance.insurerName}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                    <td style="width: 15%">
+                                        <div class="slds-truncate" title={insurance.groupNumber}>
+                                            <lightning-formatted-text value={insurance.groupNumber}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                    <td style="width: 15%">
+                                        <div class="slds-truncate" title={insurance.relationshipToPolicyHolder}>
+                                            <lightning-formatted-text value={insurance.relationshipToPolicyHolder}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                    <td style="width: 15%">
+                                        <div class="slds-truncate" title={submission.veteransAffairsAuthorizationReferralNumber}>
+                                            <lightning-formatted-text value={submission.veteransAffairsAuthorizationReferralNumber}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                    <td style="width: 20%">
+                                        <div class="slds-truncate" title={submission.employer.employerCode}>
+                                            <lightning-formatted-text value={submission.employer.employerCode}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                    <td style="width: 10%">
+                                        <div class="slds-truncate" title="Visit Number">
+                                            N/A
+                                        </div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </template>
+
+                        <template if:false={submission.hasInsurance}>
+                            <tr key={submission.id}>
+                                <td style="width: 25%">
+                                </td>
+                                <td style="width: 15%">
+                                </td>
+                                <td style="width: 15%">
+                                </td>
+                                <td style="width: 15%">
+                                    <div class="slds-truncate" title={submission.veteransAffairsAuthorizationReferralNumber}>
+                                        <lightning-formatted-text value={submission.veteransAffairsAuthorizationReferralNumber}></lightning-formatted-text>
+                                    </div>
+                                </td>
+                                <td style="width: 20%">
+                                    <div class="slds-truncate" title={submission.employer.employerCode}>
+                                        <lightning-formatted-text value={submission.employer.employerCode}></lightning-formatted-text>
+                                    </div>
+                                </td>
+                                <td style="width: 10%">
+                                    <div class="slds-truncate" title="Visit Number">
+                                        N/A
+                                    </div>
+                                </td>
+                            </tr>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+
+            <div class="slds-text-heading_small slds-p-top_medium">
+                Baby Data:
+            </div>
+
+            <table class="slds-table slds-table_bordered slds-border_left slds-border_right">
+                <thead>
+                    <th scope="col" style="width: 20%">
+                        <div class="slds-truncate" title="Name">Name</div>
+                    </th>
+                    <th scope="col" style="width: 25%">
+                        <div class="slds-truncate" title="Insurance Company">Insurance Company</div>
+                    </th>
+                    <th scope="col" style="width: 15%">
+                        <div class="slds-truncate" title="Group Number">Group Number</div>
+                    </th>
+                    <th scope="col" style="width: 40%">
+                        <div class="slds-truncate" title="Rel to Policy Holder">Rel to Policy Holder</div>
+                    </th>
+                </thead>
+
+                <tbody>
+                    <template for:each={result.submissions} for:item="submission">
+                        <template for:each={submission.babies} for:item="baby">
+                            <template if:true={baby.hasInsurance}>
+                                <template for:each={baby.insurances} for:item="insurance">
+                                    <tr key={insurance.id}>
+                                        <td style="width: 20%">
+                                            <div class="slds-truncate" title={baby.firstName}>
+                                                <lightning-formatted-text value={baby.firstName}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                        <td style="width: 25%">
+                                            <div class="slds-truncate" title={insurance.insurerName}>
+                                                <lightning-formatted-text value={insurance.insurerName}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%">
+                                            <div class="slds-truncate" title={insurance.groupNumber}>
+                                                <lightning-formatted-text value={insurance.groupNumber}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                        <td style="width: 40%">
+                                            <div class="slds-truncate" title={insurance.relationshipToPolicyHolder}>
+                                                <lightning-formatted-text value={insurance.relationshipToPolicyHolder}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </template>
+
+                            <template if:false={baby.hasInsurance}>
+                                <tr key={baby.id}>
+                                    <td style="width: 20%">
+                                        <div class="slds-truncate" title={baby.firstName}>
+                                            <lightning-formatted-text value={baby.firstName}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                    <td style="width: 25%">
+                                    </td>
+                                    <td style="width: 15%">
+                                    </td>
+                                    <td style="width: 40%">
+                                    </td>
+                                </tr>
+                            </template>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+
+            <div class="slds-text-heading_small slds-p-top_medium">
+                Eligibility Data:
+            </div>
+
+            <div>
+                <table class="slds-table slds-table_bordered slds-border_left slds-border_right slds-p-bottom_medium slds-table_fixed-layout">
+                    <thead>
+                        <th class="" scope="col" style="width: 10%">
+                            <div class="slds-truncate" title="Intake Viewer">Intake Viewer</div>
+                        </th>
+                        <th class="" scope="col" style="width: 15%">
+                            <div class="slds-truncate" title="Submission ID">Submission ID</div>
+                        </th>
+                        <th class="" scope="col" style="width: 10%">
+                            <div class="slds-truncate" title="Status">Status</div>
+                        </th>
+                        <th class="" scope="col" style="width: 15%">
+                            <div class="slds-truncate" title="Status Reason">Status Reason</div>
+                        </th>
+                        <th class="" scope="col" style="width: 15%">
+                            <div class="slds-truncate" title="Submission Date/Time">Submission Date/Time</div>
+                        </th>
+                        <th class="" scope="col" style="width: 20%">
+                            <div class="slds-truncate" title="Decision">Decision</div>
+                        </th>
+                        <th class="" scope="col" style="width: 15%">
+                            <div class="slds-truncate" title="Clinical Practice">Clinical Practice</div>
+                        </th>
+                    </thead>
+
+                    <tbody>
+                        <template for:each={result.submissions} for:item="submission">
+                            <template if:true={submission.hasEligibility}>
+                                <template for:each={submission.eligibilities} for:item="eligibility">
+                                    <tr key={eligibility.eligibilityID}>
+                                        <td style="width: 10%">
+                                            <div class="slds-truncate" title="Intake Viewer">
+                                                <lightning-formatted-url
+                                                        value={submission.intakeViewerUrl}
+                                                        label="Open"
+                                                        target="_blank">
+
+                                                </lightning-formatted-url>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%">
+                                            <div class="slds-truncate" title={submission.id}>
+                                                <lightning-formatted-text value={submission.id}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                        <td style="width: 10%">
+                                            <div class="slds-truncate" title={submission.submissionOperationStatus}>
+                                                <lightning-formatted-text value={submission.submissionOperationStatus}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%">
+                                            <div class="slds-truncate" title={eligibility.status}>
+                                                <lightning-formatted-text value={eligibility.status}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%">
+                                            <div class="slds-truncate" title="Submission Date/Time">
+                                                <lightning-formatted-date-time value={submission.dateCreated}></lightning-formatted-date-time>
+                                            </div>
+                                        </td>
+                                        <td style="width: 20%">
+                                            <div class="slds-truncate" title={eligibility.internalDescription}>
+                                                <lightning-formatted-text value={eligibility.internalDescription}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%">
+                                            <div class="slds-truncate" title={submission.clinicalPractice}>
+                                                <lightning-formatted-text value={submission.clinicalPractice}></lightning-formatted-text>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </template>
+
+                            <template if:false= {submission.hasEligibility}>
+                                <tr key={submission.id}>
+                                    <td style="width: 10%">
+                                        <div class="slds-truncate" title="Intake Viewer">
+                                            <lightning-formatted-url
+                                                    value={submission.intakeViewerUrl}
+                                                    label="Open"
+                                                    target="_blank">
+
+                                            </lightning-formatted-url>
+                                        </div>
+                                    </td>
+                                    <td style="width: 15%">
+                                        <div class="slds-truncate" title={submission.id}>
+                                            <lightning-formatted-text value={submission.id}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                    <td style="width: 10%">
+                                        <div class="slds-truncate" title={submission.submissionOperationStatus}>
+                                            <lightning-formatted-text value={submission.submissionOperationStatus}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                    <td style="width: 15%">
+                                    </td>
+                                    <td style="width: 15%">
+                                        <div class="slds-truncate" title="Submission Date/Time">
+                                            <lightning-formatted-date-time value={submission.dateCreated}></lightning-formatted-date-time>
+                                        </div>
+                                    </td>
+                                    <td style="width: 20%">
+                                    </td>
+                                    <td style="width: 15%">
+                                        <div class="slds-truncate" title={submission.clinicalPractice}>
+                                            <lightning-formatted-text value={submission.clinicalPractice}></lightning-formatted-text>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+
+            <div if:false={isLoaded} class="slds-is-relative">
+                <lightning-spinner
+                    alternative-text="Loading..." variant="brand">
+                </lightning-spinner>
+            </div>
+        </div>
+    </template>
+</template>

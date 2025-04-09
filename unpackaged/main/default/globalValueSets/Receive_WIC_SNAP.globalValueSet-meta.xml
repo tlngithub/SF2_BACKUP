@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Yes, WIC</fullName>
+        <default>false</default>
+        <label>Yes, WIC</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes, SNAP</fullName>
+        <default>false</default>
+        <label>Yes, SNAP</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes, Disability</fullName>
+        <default>false</default>
+        <label>Yes, Disability</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes, Social Security</fullName>
+        <default>false</default>
+        <label>Yes, Social Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes, Multiple Assistance Programs</fullName>
+        <default>false</default>
+        <label>Yes, Multiple Assistance Programs</label>
+    </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <customValue>
+        <fullName>Prefer Not to Answer</fullName>
+        <default>false</default>
+        <label>Prefer Not to Answer</label>
+    </customValue>
+    <masterLabel>Receive WIC/SNAP</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

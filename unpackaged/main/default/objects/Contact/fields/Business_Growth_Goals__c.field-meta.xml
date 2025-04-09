@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Growth_Goals__c</fullName>
+    <label>Business Growth Goals</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I have all the business I can handle</fullName>
+                <default>false</default>
+                <label>I have all the business I can handle</label>
+            </value>
+            <value>
+                <fullName>I would like a little more business</fullName>
+                <default>false</default>
+                <label>I would like a little more business</label>
+            </value>
+            <value>
+                <fullName>I would like a lot more business</fullName>
+                <default>false</default>
+                <label>I would like a lot more business</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

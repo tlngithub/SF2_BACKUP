@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_to_Advocate_on_Denial__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is used to inform users of whether a patient has provided TLN with the approval to advocate on their behalf (this value is passed from services to Salesforce).</description>
+    <label>Approval to Advocate on Denial</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

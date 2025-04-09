@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>myTLN</fullName>
+        <default>false</default>
+        <label>myTLN</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TLN LC</fullName>
+        <default>false</default>
+        <label>TLN LC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TLN Ad</fullName>
+        <default>false</default>
+        <label>TLN Ad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Care Provider</fullName>
+        <default>false</default>
+        <label>Care Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Friend or Family</fullName>
+        <default>false</default>
+        <label>Friend or Family</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advertisement (YouTube, TV, Google, Facebook, etc.)</fullName>
+        <default>false</default>
+        <label>Advertisement (YouTube, TV, Google, Facebook, etc.)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TLN&#39;s Social Media (Facebook, Instagram, Pinterest, LinkedIn)</fullName>
+        <default>false</default>
+        <label>TLN&#39;s Social Media (Facebook, Instagram, Pinterest, LinkedIn)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>An Influencer I follow</fullName>
+        <default>false</default>
+        <label>An Influencer I follow</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Billboard</fullName>
+        <default>false</default>
+        <label>Billboard</label>
+    </standardValue>
+    <standardValue>
+        <fullName>My IBCLC</fullName>
+        <default>false</default>
+        <label>My IBCLC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Healthcare provider (OB/GYN, Pediatrician, etc.)</fullName>
+        <default>false</default>
+        <label>Healthcare provider (OB/GYN, Pediatrician, etc.)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employer</fullName>
+        <default>false</default>
+        <label>Employer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website/Blog</fullName>
+        <default>false</default>
+        <label>Website/Blog</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner/Collaboration (Specify name if applicable)</fullName>
+        <default>false</default>
+        <label>Partner/Collaboration (Specify name if applicable)</label>
+    </standardValue>
+</StandardValueSet>

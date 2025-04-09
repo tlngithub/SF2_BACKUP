@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Problem</fullName>
+        <default>false</default>
+        <label>Problem</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Feature Request</fullName>
+        <default>false</default>
+        <label>Feature Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Question</fullName>
+        <default>false</default>
+        <label>Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial Rules</fullName>
+        <default>false</default>
+        <label>Financial Rules</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Patient Question – Intake &amp; Eligibility</fullName>
+        <default>false</default>
+        <label>Patient Question – Intake &amp; Eligibility</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Patient Question – Other</fullName>
+        <default>false</default>
+        <label>Patient Question – Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <label>Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract</fullName>
+        <default>false</default>
+        <label>Contract</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Authorization/Referrals</fullName>
+        <default>false</default>
+        <label>Authorization/Referrals</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Inquiry</fullName>
+        <default>false</default>
+        <label>General Inquiry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Veterans Affairs</fullName>
+        <default>false</default>
+        <label>Veterans Affairs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Newborn Family</fullName>
+        <default>false</default>
+        <label>Newborn Family</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PVerify Error</fullName>
+        <default>false</default>
+        <label>PVerify Error</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Patient</fullName>
+        <default>false</default>
+        <label>New Patient</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Insurance</fullName>
+        <default>false</default>
+        <label>New Insurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>P&amp;N File Issue</fullName>
+        <default>false</default>
+        <label>P&amp;N File Issue</label>
+    </standardValue>
+</StandardValueSet>

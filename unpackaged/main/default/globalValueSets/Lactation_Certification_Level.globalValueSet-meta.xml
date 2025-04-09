@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Breastfeeding Counselor</fullName>
+        <default>false</default>
+        <label>Breastfeeding Counselor</label>
+    </customValue>
+    <customValue>
+        <fullName>Certified Medical Assistant</fullName>
+        <default>false</default>
+        <label>Certified Medical Assistant</label>
+    </customValue>
+    <customValue>
+        <fullName>CLE/CLC/CLES</fullName>
+        <default>false</default>
+        <label>CLE/CLC/CLES</label>
+    </customValue>
+    <customValue>
+        <fullName>IBCLC</fullName>
+        <default>false</default>
+        <label>IBCLC</label>
+    </customValue>
+    <customValue>
+        <fullName>Nurse Practitioner</fullName>
+        <default>false</default>
+        <label>Nurse Practitioner</label>
+    </customValue>
+    <customValue>
+        <fullName>Registered Nurse</fullName>
+        <default>false</default>
+        <label>Registered Nurse</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Lactation Certification Level</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

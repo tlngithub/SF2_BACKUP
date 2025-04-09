@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Alternate_Email_2</fullName>
+    <active>true</active>
+    <description>Is used to make sure Email and Alternate Email fields are filled before populating alternate email second field.</description>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(Status__c, &#39;Disabled&#39;)), OR(ISBLANK(Email), ISBLANK(Alternate_Email_1__c)), NOT(ISBLANK(Alternate_Email_2__c)))</errorConditionFormula>
+    <errorDisplayField>Alternate_Email_2__c</errorDisplayField>
+    <errorMessage>Email and Alternate Email fields shall be populated before storing Alternate Email 2.</errorMessage>
+</ValidationRule>

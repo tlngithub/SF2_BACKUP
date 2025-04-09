@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Under $20,000</fullName>
+        <default>false</default>
+        <label>Under $20,000</label>
+    </customValue>
+    <customValue>
+        <fullName>$20,000 - $30,000</fullName>
+        <default>false</default>
+        <label>$20,000 - $30,000</label>
+    </customValue>
+    <customValue>
+        <fullName>$30,000 - $50,000</fullName>
+        <default>false</default>
+        <label>$30,000 - $50,000</label>
+    </customValue>
+    <customValue>
+        <fullName>$50,000 - $80,000</fullName>
+        <default>false</default>
+        <label>$50,000 - $80,000</label>
+    </customValue>
+    <customValue>
+        <fullName>$80,000 - $150,000</fullName>
+        <default>false</default>
+        <label>$80,000 - $150,000</label>
+    </customValue>
+    <customValue>
+        <fullName>Over $150,000</fullName>
+        <default>false</default>
+        <label>Over $150,000</label>
+    </customValue>
+    <masterLabel>Annual Household Income</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

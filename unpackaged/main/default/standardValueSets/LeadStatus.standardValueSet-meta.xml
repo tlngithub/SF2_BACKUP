@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Unqualified</fullName>
+        <default>false</default>
+        <label>Unqualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>false</default>
+        <label>Working</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Nurturing</fullName>
+        <default>false</default>
+        <label>Nurturing</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualified</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Applied</fullName>
+        <default>false</default>
+        <label>Applied</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Not moving on</fullName>
+        <default>false</default>
+        <label>Not moving on</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Moving on to review</fullName>
+        <default>false</default>
+        <label>Moving on to review</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending committee score</fullName>
+        <default>false</default>
+        <label>Pending committee score</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Practice Eligible</fullName>
+        <default>false</default>
+        <label>Practice Eligible</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Practice Ineligible</fullName>
+        <default>false</default>
+        <label>Practice Ineligible</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Practice Ineligible - IBCLC Certification Status</fullName>
+        <default>false</default>
+        <label>Practice Ineligible - IBCLC Certification Status</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Enrolling / Information Gathering</fullName>
+        <default>false</default>
+        <label>Enrolling / Information Gathering</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Background Check</fullName>
+        <default>false</default>
+        <label>Background Check</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract in Progress</fullName>
+        <default>false</default>
+        <label>Contract in Progress</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Sent</fullName>
+        <default>false</default>
+        <label>Contract Sent</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Signed</fullName>
+        <default>false</default>
+        <label>Contract Signed</label>
+        <converted>true</converted>
+    </standardValue>
+</StandardValueSet>

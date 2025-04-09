@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mthly_BG_Check__c</fullName>
+    <description>Is used to capture the result of a monthly background check for LCs.</description>
+    <label>Mthly BG Check</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>MonthlyBackgroundCheck</valueSetName>
+    </valueSet>
+</CustomField>

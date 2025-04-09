@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pathway 1 – Recognized Health Professionals and Recognized Breastfeeding Support</fullName>
+        <default>false</default>
+        <label>Pathway 1 – Recognized Health Professionals and Recognized Breastfeeding Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Counselors</fullName>
+        <default>false</default>
+        <label>Counselors</label>
+    </customValue>
+    <customValue>
+        <fullName>Pathway 2 – Lactation Academic Education Program</fullName>
+        <default>false</default>
+        <label>Pathway 2 – Lactation Academic Education Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Pathway 3 – Mentorship with an IBCLC (or “DIY” Pathway)</fullName>
+        <default>false</default>
+        <label>Pathway 3 – Mentorship with an IBCLC (or “DIY” Pathway)</label>
+    </customValue>
+    <masterLabel>IBCLE certification pathway</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

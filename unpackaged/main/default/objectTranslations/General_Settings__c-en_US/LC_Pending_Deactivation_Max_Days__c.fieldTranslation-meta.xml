@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Used to store Maximum Number of Days for LC with Pending Deactivation status. When passed, LC will be moved to Deactivated status. --></help>
+        <label><!-- LC Pending Deactivation Max Days --></label>
+        <name>LC_Pending_Deactivation_Max_Days__c</name>
+    </CustomFieldTranslation>

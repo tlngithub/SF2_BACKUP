@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Patient Lead Assignment Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>integration+patient@tln.care.sf</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Record_Type_Name__c</field>
+                <operation>equals</operation>
+                <value>Patient</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

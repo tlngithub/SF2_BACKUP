@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Notify the case owner that the task is completed</description>
+        <name>NotifyCaseOwner</name>
+        <label>Notify Case Owner</label>
+        <locationX>578</locationX>
+        <locationY>755</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <elementReference>conNotificationId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>vcCaseOwnerId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <stringValue>Completed Task Notification</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <elementReference>ttNotificationBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetId</name>
+            <value>
+                <elementReference>vCaseId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <name>Assign_Case_Owner_Id_to_variable</name>
+        <label>Assign Case Owner Id to variable</label>
+        <locationX>578</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>vcCaseOwnerId</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>vOwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>NotifyCaseOwner</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Notification Id used in Apex: Send Custom Notification Action.  This has to be pulled by Query Editor.</description>
+        <name>conNotificationId</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0MLdl0000000dz3GAA</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Is_Intake_Case</name>
+        <label>Is Intake Case</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Do Nothing</defaultConnectorLabel>
+        <rules>
+            <name>Not_Intake_Case</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Query_Case.Record_Type_Developer_Name__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Intake</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_Status</targetReference>
+            </connector>
+            <label>Not Intake Case</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check to see if the isNew formula = True</description>
+        <name>Is_Task_New</name>
+        <label>Is Task New?</label>
+        <locationX>446</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Is_the_Task_completed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Existing Task</defaultConnectorLabel>
+        <rules>
+            <name>New_Task</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fIsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Query_Case</targetReference>
+            </connector>
+            <label>New Task</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>When the task is completed, the Case Owner will be notified.</description>
+        <name>Is_the_Task_completed</name>
+        <label>Is the Task completed?</label>
+        <locationX>710</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>No Further Action</defaultConnectorLabel>
+        <rules>
+            <name>Completed_Task</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_case_owner_id</targetReference>
+            </connector>
+            <label>Completed Task</label>
+        </rules>
+    </decisions>
+    <description>21199 - Associated to 21192 Updates Case status when a task is created.  Notifies Case owner when task is closed.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Evaluates to True if the task is new</description>
+        <name>fIsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to create Task URL</description>
+        <name>fTaskUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT($Api.Partner_Server_URL_260, FIND( &#39;/services&#39;, $Api.Partner_Server_URL_260)) &amp; {!$Record.Id}</expression>
+    </formulas>
+    <interviewLabel>Task - Case Updates {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task - Case Updates</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>get_case_owner_id</name>
+        <label>get case owner id</label>
+        <locationX>578</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Case_Owner_Id_to_variable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <object>Case</object>
+        <outputAssignments>
+            <assignToReference>vCaseNumber</assignToReference>
+            <field>CaseNumber</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>vCaseId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>vOwnerId</assignToReference>
+            <field>OwnerId</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Query_Case</name>
+        <label>Query Case</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Intake_Case</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Record_Type_Developer_Name__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>When a task is created for a case, update the Case Status to &quot;Waiting on other Team&quot;</description>
+        <name>Update_Case_Status</name>
+        <label>Update Case Status</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Waiting on Internal Response</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Task_New</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>TaskSubtype</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Task</stringValue>
+            </value>
+        </filters>
+        <object>Task</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Body of the message that will be used in the inAppNotification</description>
+        <name>ttNotificationBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>A task on your case {!vCaseNumber} has closed.  Take action on your case now.</text>
+    </textTemplates>
+    <variables>
+        <description>Text variable for case id used in notifications</description>
+        <name>vCaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>used in custom notification</description>
+        <name>vCaseNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>vcCaseOwnerId</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Case owner id will be assigned to case owner collection variable</description>
+        <name>vOwnerId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

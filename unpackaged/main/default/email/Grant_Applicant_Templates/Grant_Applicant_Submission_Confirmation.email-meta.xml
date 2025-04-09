@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Is used to send automatic email when Grant Applicant lead record is created.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Grant_Applicant_Letterhead</letterhead>
+    <name>Grant Applicant: Submission Confirmation</name>
+    <style>freeForm</style>
+    <subject>Grant and Scholarship Thank You Confirmation</subject>
+    <textOnly>Thank you for taking the time to submit an application. We have received your materials, review will begin shortly. Grant decisions will be announced on August 30. Scholarship awards will be announced on September 2. Should you have any questions or require assistance, please contact us at grants@tln.care.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

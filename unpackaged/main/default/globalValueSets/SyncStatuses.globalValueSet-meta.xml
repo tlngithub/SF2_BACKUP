@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Need Sync</fullName>
+        <default>false</default>
+        <label>Need Sync</label>
+    </customValue>
+    <customValue>
+        <fullName>Synced</fullName>
+        <default>false</default>
+        <label>Synced</label>
+    </customValue>
+    <customValue>
+        <fullName>Error</fullName>
+        <default>false</default>
+        <label>Error</label>
+    </customValue>
+    <customValue>
+        <fullName>Ignore</fullName>
+        <default>false</default>
+        <label>Ignore</label>
+    </customValue>
+    <masterLabel>Sync Statuses</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

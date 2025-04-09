@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadSourceValidation_TLN_LC</fullName>
+    <active>true</active>
+    <description>TLN LC</description>
+    <errorConditionFormula>AND(TEXT(LeadSource)=&#39;TLN LC&#39;, AND( Referred_by_LC__c = NULL, Outside_LC_Referral__c != TRUE))</errorConditionFormula>
+    <errorMessage>Referred by LC is required or Outside LC Referral should be checked</errorMessage>
+</ValidationRule>

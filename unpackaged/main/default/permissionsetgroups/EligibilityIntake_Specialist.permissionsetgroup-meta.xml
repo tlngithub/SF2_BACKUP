@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Eligibility/Intake Specialist</label>
+    <permissionSets>Account_View_Edit</permissionSets>
+    <permissionSets>Case_Create_Eligibility_Cases</permissionSets>
+    <permissionSets>Case_Create_Intake_Cases</permissionSets>
+    <permissionSets>Contact_View_Edit</permissionSets>
+    <permissionSets>Lead_View_Edit</permissionSets>
+    <permissionSets>Locations_Create</permissionSets>
+    <permissionSets>Submission_And_Eligibility_Access</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

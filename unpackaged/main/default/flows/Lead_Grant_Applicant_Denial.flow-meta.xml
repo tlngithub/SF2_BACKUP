@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Denial_Email</name>
+        <label>Send Denial Email</label>
+        <locationX>314</locationX>
+        <locationY>276</locationY>
+        <actionName>Lead.Lead_Grant_Applicant_Application_Denied</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Update_Denial_Sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Lead.Lead_Grant_Applicant_Application_Denied</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <description>Is used to send denial email.</description>
+    <environments>Default</environments>
+    <interviewLabel>Lead Grant Applicant: Submission Confirmation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead Grant Applicant: Denial</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Is used as a source from which we calculate 1 hour offset.</description>
+        <name>Update_Denial_Datetime</name>
+        <label>Update Denial Datetime</label>
+        <locationX>50</locationX>
+        <locationY>276</locationY>
+        <inputAssignments>
+            <field>Denial_Email_Datetime__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Mark as sent.</description>
+        <name>Update_Denial_Sent</name>
+        <label>Update Denial Sent</label>
+        <locationX>314</locationX>
+        <locationY>384</locationY>
+        <inputAssignments>
+            <field>Denial_Email_Sent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Denial_Datetime</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND({!$Record.RecordType.DeveloperName} = &#39;Grant_Applicant&#39;, ISPICKVAL({!$Record.Status}, &#39;Not moving on&#39;), NOT({!$Record.Denial_Email_Sent__c}))</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>Delayed_Email</name>
+            <connector>
+                <targetReference>Send_Denial_Email</targetReference>
+            </connector>
+            <label>Delayed Email</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Denial_Email_Datetime__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Lead_Grant_Applicant_Application_Denied</fullName>
+        <description>Lead Grant Applicant: Application Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>grants@tln.care</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Grant_Applicant_Templates/Grant_Applicant_Application_Denied</template>
+    </alerts>
+    <alerts>
+        <fullName>Lead_Grant_Applicant_Submission_Confirmation</fullName>
+        <description>Lead Grant Applicant: Submission Confirmation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>grants@tln.care</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Grant_Applicant_Templates/Grant_Applicant_Submission_Confirmation</template>
+    </alerts>
+</Workflow>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Self_Pay_Rental_Tier__c</fullName>
+    <label>Self-Pay Rental Tier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>true</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Tier 2 - GR only</fullName>
+                <default>false</default>
+                <label>Tier 2 - GR only</label>
+            </value>
+            <value>
+                <fullName>Tier 2 - CPM only</fullName>
+                <default>false</default>
+                <label>Tier 2 - CPM only</label>
+            </value>
+            <value>
+                <fullName>Tier 2 - GR &amp; CPM</fullName>
+                <default>false</default>
+                <label>Tier 2 - GR &amp; CPM</label>
+            </value>
+            <value>
+                <fullName>Tier 3 - GR only</fullName>
+                <default>false</default>
+                <label>Tier 3 - GR only</label>
+            </value>
+            <value>
+                <fullName>Tier 3 - CPM only</fullName>
+                <default>false</default>
+                <label>Tier 3 - CPM only</label>
+            </value>
+            <value>
+                <fullName>Tier 3 - GR &amp; CPM</fullName>
+                <default>false</default>
+                <label>Tier 3 - GR &amp; CPM</label>
+            </value>
+            <value>
+                <fullName>Tier 4 - GR only</fullName>
+                <default>false</default>
+                <label>Tier 4 - GR only</label>
+            </value>
+            <value>
+                <fullName>Tier 4 - CPM only</fullName>
+                <default>false</default>
+                <label>Tier 4 - CPM only</label>
+            </value>
+            <value>
+                <fullName>Tier 4 - GR &amp; CPM</fullName>
+                <default>false</default>
+                <label>Tier 4 - GR &amp; CPM</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

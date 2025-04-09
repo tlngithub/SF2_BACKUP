@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This is the Apex class that will be injected into the process execution. --></help>
+        <label><!-- Class To Inject --></label>
+        <name>ClassToInject__c</name>
+    </CustomFieldTranslation>

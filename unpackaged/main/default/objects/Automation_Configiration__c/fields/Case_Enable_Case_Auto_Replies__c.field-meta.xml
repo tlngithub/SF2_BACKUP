@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Enable_Case_Auto_Replies__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is used to enable/disable case auto-replies.</description>
+    <label>Case - Enable Case Auto Replies</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Test Data Supplementer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Test Data Supplementers</value>
+    </caseValues>
+    
+    
+    
+    
+    <layouts>
+        <layout>Test Data Supplementer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only specify the &quot;Binding SObject&quot; field or the &quot;Binding SObject Alternate&quot; field; not both. --></errorMessage>
+        <name>BindObj_Or_BindObjAlt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either the &quot;Binding SObject&quot; field or the &quot;Binding SObject Alternate&quot; field must be specified. --></errorMessage>
+        <name>Minimal_BindObj_Or_BindObjAlt</name>
+    </validationRules>
+</CustomObjectTranslation>

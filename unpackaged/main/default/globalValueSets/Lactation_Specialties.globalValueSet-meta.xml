@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bottle Strikes</fullName>
+        <default>false</default>
+        <label>Bottle Strikes</label>
+    </customValue>
+    <customValue>
+        <fullName>Breastfeeding after augmentation</fullName>
+        <default>false</default>
+        <label>Breastfeeding after augmentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Breastfeeding after breast reduction</fullName>
+        <default>false</default>
+        <label>Breastfeeding after breast reduction</label>
+    </customValue>
+    <customValue>
+        <fullName>Exclusive pumping</fullName>
+        <default>false</default>
+        <label>Exclusive pumping</label>
+    </customValue>
+    <customValue>
+        <fullName>Induced Lactation</fullName>
+        <default>false</default>
+        <label>Induced Lactation</label>
+    </customValue>
+    <customValue>
+        <fullName>Inducing lactation for those assigned male at birth</fullName>
+        <default>false</default>
+        <label>Inducing lactation for those assigned male at birth</label>
+    </customValue>
+    <customValue>
+        <fullName>Inducing Lactation / Relactation</fullName>
+        <default>false</default>
+        <label>Inducing Lactation / Relactation</label>
+    </customValue>
+    <customValue>
+        <fullName>Lactation during bereavement</fullName>
+        <default>false</default>
+        <label>Lactation during bereavement</label>
+    </customValue>
+    <customValue>
+        <fullName>LGTBQIA+ families</fullName>
+        <default>false</default>
+        <label>LGTBQIA+ families</label>
+    </customValue>
+    <customValue>
+        <fullName>Multiples</fullName>
+        <default>false</default>
+        <label>Multiples</label>
+    </customValue>
+    <customValue>
+        <fullName>NICU families</fullName>
+        <default>false</default>
+        <label>NICU families</label>
+    </customValue>
+    <customValue>
+        <fullName>Oral anatomy concerns (including ankyloglossia)</fullName>
+        <default>false</default>
+        <label>Oral anatomy concerns (including ankyloglossia)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Lactation Specialties</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

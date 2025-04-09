@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Practice Owner</fullName>
+        <default>true</default>
+        <label>Practice Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>Full Admin</fullName>
+        <default>false</default>
+        <label>Full Admin</label>
+    </customValue>
+    <customValue>
+        <fullName>Subcontractor</fullName>
+        <default>false</default>
+        <label>Subcontractor</label>
+    </customValue>
+    <customValue>
+        <fullName>Practice owner, non IBCLC</fullName>
+        <default>false</default>
+        <label>Practice owner, non IBCLC</label>
+    </customValue>
+    <customValue>
+        <fullName>Admin LC</fullName>
+        <default>false</default>
+        <label>Admin LC</label>
+    </customValue>
+    <customValue>
+        <fullName>Individual IBCLC</fullName>
+        <default>false</default>
+        <label>Individual IBCLC</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Practice Owner</fullName>
+        <default>false</default>
+        <label>Private Practice Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Practice Admin</fullName>
+        <default>false</default>
+        <label>Private Practice Admin</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Practice Employee (non-Admin/Owner)</fullName>
+        <default>false</default>
+        <label>Private Practice Employee (non-Admin/Owner)</label>
+    </customValue>
+    <masterLabel>Role</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

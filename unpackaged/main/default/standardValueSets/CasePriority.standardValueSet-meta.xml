@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Emergency</fullName>
+        <default>false</default>
+        <label>Emergency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Emergent</fullName>
+        <default>false</default>
+        <label>Emergent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Urgent</fullName>
+        <default>true</default>
+        <label>Urgent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-Urgent</fullName>
+        <default>false</default>
+        <label>Non-Urgent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Planning Ahead</fullName>
+        <default>false</default>
+        <label>Planning Ahead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prenatal</fullName>
+        <default>false</default>
+        <label>Prenatal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Normal</fullName>
+        <default>false</default>
+        <label>Normal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Low</fullName>
+        <default>false</default>
+        <label>Low</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medium</fullName>
+        <default>false</default>
+        <label>Medium</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sexual_Identity_Orientation_Specified__c</fullName>
+    <label>Sexual Identity/Orientation Specified</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Sexual_Identity_Orientation</valueSetName>
+    </valueSet>
+</CustomField>

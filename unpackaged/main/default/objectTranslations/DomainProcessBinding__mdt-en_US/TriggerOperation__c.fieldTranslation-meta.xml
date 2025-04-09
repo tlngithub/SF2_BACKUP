@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- For a process context of &quot;trigger execution&quot;, you need to specify which trigger operation this criteria or action would respond to. --></help>
+        <label><!-- Trigger Operation --></label>
+        <name>TriggerOperation__c</name>
+        <picklistValues>
+            <masterLabel>After Delete</masterLabel>
+            <translation><!-- After Delete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After Insert</masterLabel>
+            <translation><!-- After Insert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After Undelete</masterLabel>
+            <translation><!-- After Undelete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After Update</masterLabel>
+            <translation><!-- After Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before Delete</masterLabel>
+            <translation><!-- Before Delete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before Insert</masterLabel>
+            <translation><!-- Before Insert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before Update</masterLabel>
+            <translation><!-- Before Update --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>
